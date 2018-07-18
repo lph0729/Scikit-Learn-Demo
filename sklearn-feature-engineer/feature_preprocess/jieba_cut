@@ -1,0 +1,16 @@
+#!/usr/bin/env python  
+# encoding: utf-8 
+
+""" 
+@author: payneLi  
+@time: 18-7-11 上午9:45
+@email: lph0729@163.com  
+
+"""
+import jieba
+
+data = ["生活很短，我喜欢python", "生活太久了，我不喜欢python"]
+
+content = [" ".join(jieba.cut(word)) for word in data]
+
+print("jieba_result:", content)
